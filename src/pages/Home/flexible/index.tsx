@@ -2,7 +2,7 @@ import Card from "../build/card";
 
 const Flexible = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full items-center px-6 my-[60px] gap-10">
+    <div className="flex flex-col md:flex-row w-full items-center px-6 my-[28px] gap-10">
       <div>
         <p className="text-2xl md:text-[38px] font-bold tracking-tight !leading-normal">
           Flexible use cases to suit your

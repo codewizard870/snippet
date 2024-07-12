@@ -6,7 +6,7 @@ const Build = () => {
   
 
   return (
-    <div className="w-full flex flex-col md:flex-row items-center px-6 my-[60px] justify-between gap-10">
+    <div className="w-full flex flex-col md:flex-row items-center px-6 my-[58px] justify-between gap-10">
       <div>
         <p className="text-2xl md:text-[38px] font-bold tracking-tight !leading-normal">
           Build a Second Brain that <br /> grows with you

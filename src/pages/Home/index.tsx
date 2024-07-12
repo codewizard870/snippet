@@ -16,12 +16,12 @@ function Home() {
         <Hero />
         <Client />
         <GetStarted />
-        <HowItWorks />
+        <Stories />
         <Build />
         <Work />
         <Flexible />
+        <HowItWorks />
         <Perks />
-        <Stories />
       </div>
     </div>
   );

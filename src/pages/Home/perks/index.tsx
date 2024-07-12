@@ -2,7 +2,7 @@ import Card from "./card";
 
 const Perks = () => {
   return (
-    <div className="mx-6 md:mx-[55px] py-[100px] flex flex-col items-center">
+    <div className="mx-6 md:mx-[55px] my-[42px] flex flex-col items-center">
       <p className="text-2xl md:text-[38px] font-bold tracking-tight pb-10 !leading-normal">
         The perks are immeasurable
       </p>

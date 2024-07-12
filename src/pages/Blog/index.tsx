@@ -18,7 +18,7 @@ const Blog = () => {
   console.log(blogs);
   return (
     <div className="pt-24 md:pt-[180px] pb-24 md:pb-[158px] mx-6 md:mx-[118px] flex flex-col items-center">
-      <p className="text-3xl font-medium leading-normal md:text-4xl font-Roboto">
+      <p className="text-3xl font-bold leading-normal md:text-4xl">
         Blog
       </p>
       <div className="flex flex-col gap-10 mt-10">

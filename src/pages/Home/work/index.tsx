@@ -2,7 +2,7 @@ import Card from "./card";
 
 const Work = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row mx-6 py-[60px] justify-between items-center gap-10">
+    <div className="flex flex-col-reverse md:flex-row mx-6 py-[28px] justify-between items-center gap-10">
       <div className="min-w-max">
         <img
           src="/assets/work/banner.png"
