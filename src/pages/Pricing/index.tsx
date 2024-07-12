@@ -1,41 +1,77 @@
 const Pricing = () => {
   return (
     <div className="pt-24 md:pt-[180px] pb-24 md:pb-[158px] mx-6 md:mx-[118px] flex flex-col items-center">
-      <p className="text-3xl font-medium leading-normal md:text-4xl font-Roboto">
-        Pricing
+      <p className="text-2xl md:text-[38px] font-bold leading-normal font-Roboto">
+        Pick Your Perfect Plan
       </p>
-      <div className="flex flex-col justify-center w-full gap-10 pt-10 md:flex-row md:w-auto">
-        <div className="p-6 border rounded-[30px] border-gray-1/50">
-          <p className="text-base md:text-lg text-gray-1/50">Regular</p>
-          <p className="pt-6 text-4xl font-semibold md:text-5xl">$15</p>
-          <p className="pt-6 text-base md:text-lg text-gray-1/50">Per Month</p>
-          <div className="w-full h-px my-4 bg-gray-1/50" />
-          <div className="flex flex-col gap-4">
-            {RegularFeatures.map((feature, index) => (
+      <p className="mt-5 text-sm md:text-base font-Mulish">
+        Find the perfect plan for your business with our flexible pricing
+        options.
+      </p>
+      <div className="flex flex-col justify-center w-full gap-10 pt-10 md:flex-row">
+        <div className="px-4 md:px-7 py-10 md:py-16 rounded-[30px] w-full md:w-[370px] bg-white">
+          <p className="text-base md:text-[21px] font-Mulish">Free</p>
+          <p className="pt-6 text-4xl font-bold md:text-[50px]">
+            $0 <span className="text-sm md:text-base">/month</span>
+          </p>
+          <p className="pt-6 text-sm md:text-base font-Mulish">
+            For people that are testing our Product{" "}
+          </p>
+          <div className="flex flex-col gap-4 mt-6">
+            {FreeFeatures.map((feature, index) => (
               <div className="flex gap-2" key={index}>
                 <img src="/assets/pricing/check.svg" className="w-4" />
-                <p className="text-xs md:text-sm text-gray-1/50">{feature}</p>
+                <p className="text-sm font-bold md:text-base font-Mulish">
+                  {feature}
+                </p>
               </div>
             ))}
           </div>
-          <button className="w-full px-6 py-2 mt-10 text-lg text-white rounded-full md:text-xl bg-primary-default hover:bg-primary-default/70">
+          <button className="w-full px-6 py-[18px] mt-10 text-md text-primary-default rounded-full md:text-base font-semibold bg-[#E5F4F2] hover:bg-[#E5F4F2]/70">
             Get Started
           </button>
         </div>
-        <div className="p-6 border rounded-[30px] border-gray-1/50">
-          <p className="text-base md:text-lg text-gray-1/50">Pro</p>
-          <p className="pt-6 text-4xl font-semibold md:text-5xl">$50</p>
-          <p className="pt-6 text-base md:text-lg text-gray-1/50">Per Month</p>
-          <div className="w-full h-px my-4 bg-gray-1/50" />
-          <div className="flex flex-col gap-4">
-            {RegularFeatures.map((feature, index) => (
+        <div className="px-4 md:px-7 py-10 md:py-16 rounded-[30px] w-full md:w-[370px] bg-white">
+          <p className="text-base md:text-[21px] font-Mulish">Starter</p>
+          <p className="pt-6 text-4xl font-bold md:text-[50px]">
+            $19 <span className="text-sm md:text-base">/month</span>
+          </p>
+          <p className="pt-6 text-sm md:text-base font-Mulish">
+            For Students and Casual Users
+          </p>
+          <div className="flex flex-col gap-4 mt-6">
+            {StarterFeatures.map((feature, index) => (
               <div className="flex gap-2" key={index}>
                 <img src="/assets/pricing/check.svg" className="w-4" />
-                <p className="text-xs md:text-sm text-gray-1/50">{feature}</p>
+                <p className="text-sm font-bold md:text-base font-Mulish">
+                  {feature}
+                </p>
               </div>
             ))}
           </div>
-          <button className="w-full px-6 py-2 mt-10 text-lg text-white rounded-full md:text-xl bg-primary-default hover:bg-primary-default/70">
+          <button className="w-full px-6 py-[18px] mt-10 text-md text-primary-default rounded-full md:text-base font-semibold bg-[#E5F4F2] hover:bg-[#E5F4F2]/70">
+            Get Started
+          </button>
+        </div>
+        <div className="px-4 md:px-7 py-10 md:py-16 rounded-[30px] w-full md:w-[370px] bg-primary-default text-white">
+          <p className="text-base md:text-[21px] font-Mulish">Professional</p>
+          <p className="pt-6 text-4xl font-bold md:text-[50px]">
+            $49 <span className="text-sm md:text-base">/month</span>
+          </p>
+          <p className="pt-6 text-sm md:text-base font-Mulish">
+            For Professionals & Heavy Duty Users
+          </p>
+          <div className="flex flex-col gap-4 mt-6">
+            {StarterFeatures.map((feature, index) => (
+              <div className="flex gap-2" key={index}>
+                <img src="/assets/pricing/check_white.svg" className="w-4" />
+                <p className="text-sm font-bold md:text-base font-Mulish">
+                  {feature}
+                </p>
+              </div>
+            ))}
+          </div>
+          <button className="w-full px-6 py-[18px] mt-10 text-md text-primary-default rounded-full md:text-base font-semibold bg-white hover:bg-white/70">
             Get Started
           </button>
         </div>
@@ -46,11 +82,20 @@ const Pricing = () => {
 
 export default Pricing;
 
-const RegularFeatures = [
-  "Article and video capture",
-  "AI-powered summaries",
-  "Daily/weekly email recaps",
-  "Browser Extension",
-  "Personal search engine",
-  "Knowlege Import",
+const FreeFeatures = [
+  "5 Bookmarked Web Pages",
+  "10 Queries per Day",
+  "Write feature details here",
+];
+
+const StarterFeatures = [
+  "Write feature details here",
+  "Write feature details here",
+  "Write feature details here",
+];
+
+const ProfessionalFeatures = [
+  "Write feature details here",
+  "Write feature details here",
+  "Write feature details here",
 ];
