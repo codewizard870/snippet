@@ -25,9 +25,15 @@ const JoinWaitList = () => {
     >
       <div className="flex items-center justify-center w-full h-full">
         <div
-          className={`w-[90vw] h-[540px] md:h-[647px] border border-primary-default flex justify-center items-center px-4 md:px-0 bg-white rounded-lg`}
+          className={`relative w-[90vw] h-[540px] md:w-[1140px] md:h-[647px] border border-primary-default flex justify-center items-center px-4 md:px-0 bg-white rounded-lg shadow-5xl`}
           onClick={(e) => e.stopPropagation()}
         >
+          <div
+            className="absolute p-4 rounded-full cursor-pointer top-10 right-10 hover:bg-primary-default/10"
+            onClick={() => dispatch(toggleWaitList(false))}
+          >
+            <img src="/assets/joinwaitlist/close.png" />
+          </div>
           <div className="w-[700px]">
             <p className="text-3xl md:text-[38px] font-semibold text-primary-default text-center">
               We’re Launching Soon!
@@ -54,7 +60,9 @@ const JoinWaitList = () => {
                   defaultValue="+1"
                 >
                   {PhoneOptions.map((op, index) => (
-                    <option value={op.value} key={index}>{op.label}</option>
+                    <option value={op.value} key={index}>
+                      {op.label}
+                    </option>
                   ))}
                 </select>
                 <input className="w-full border border-black/50 focus-visible:outline-none h-7 text-xs md:text-[13px] px-2" />
@@ -66,7 +74,9 @@ const JoinWaitList = () => {
               </p>
               <select className="text-xs md:text-[13px] border border-black/50 focus-visible:outline-none h-7 px-2 w-full">
                 {WhereOptions.map((op, index) => (
-                  <option value={op} key={index}>{op}</option>
+                  <option value={op} key={index}>
+                    {op}
+                  </option>
                 ))}
               </select>
             </div>

@@ -42,7 +42,7 @@ const Cards = [
   },
   {
     icon: "/assets/work/3.png",
-    label: "Query single documents.or entire folders of data",
+    label: "Query single documents, or entire folders of data",
   },
   {
     icon: "/assets/work/4.png",

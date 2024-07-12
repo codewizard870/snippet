@@ -28,6 +28,9 @@ module.exports = {
       web: "url('../public/images/home/left_web.svg')",
       "feature-line": "url('../public/images/features/feature_line_1.svg')",
     },
+    boxShadow: {
+      '5xl': '3px 3px 10px #009379a0',
+    }
   },
   plugins: [],
 };

@@ -29,7 +29,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
         <div className="items-center hidden gap-2 md:flex md:gap-12">
           {Routes.map((route, index) => (
             <a href={route.href} key={index}>
-              <span className="text-sm font-semibold md:block md:text-base">
+              <span className="text-sm font-semibold md:block md:text-base text-primary-default">
                 {route.label}
               </span>
             </a>

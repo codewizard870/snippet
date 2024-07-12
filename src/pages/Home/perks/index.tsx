@@ -34,6 +34,6 @@ const Cards = [
     icon: "/assets/perks/3.png",
     title: "Cut the noise and focus on value",
     label:
-      "Never spend hours trawling through your inbox or bookmarks again. Get the information you need. when you need it.",
+      "Learn better, write quicker, deepen your understanding. Find mission critical information and make it work for you in the least amount of time possible.",
   },
 ];
