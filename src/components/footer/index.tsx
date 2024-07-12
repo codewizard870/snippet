@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <div className="bg-black text-white p-6 md:p-[50px] flex flex-col md:flex-row gap-10 md:justify-between">
+    <div className="bg-white text-black p-6 md:p-[50px] flex flex-col md:flex-row gap-10 md:justify-between">
       <div>
-        <p className="text-xl md:text-2xl">Wallet</p>
+        <p className="text-xl md:text-2xl">second<b>BrainAI</b></p>
         <div className="pt-[49px] flex flex-col md:flex-row gap-[30px] justify-between">
           {Routes.map((route, index) => (
             <a href={route.href} target="_blank" key={index}>
@@ -31,7 +31,7 @@ export default Footer;
 
 const Routes = [
   {
-    label: "© Wallet 2022",
+    label: '© secondBrainAI',
     href: ""
   },
   {
