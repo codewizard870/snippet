@@ -1,6 +1,4 @@
 import React from "react";
-import { ScrollTrigger, Tween } from "react-gsap";
-import { BsDiscord } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import JoinButton from "../joinButton";
 
@@ -16,8 +14,8 @@ const Header: React.FC<HeaderProps> = ({}) => {
         onClick={() => navigate("/")}
       >
         <img src="/assets/img/logo.png" className="w-8" />
-        <span className="text-xl md:text-2xl">
-          The<span className="font-bold">Snippet</span>
+        <span className="text-xl md:text-[21px]">
+          second<span className="font-bold">BrainAI</span>
         </span>
       </div>
       <div className="flex gap-12">

@@ -2,25 +2,25 @@ import { useRef, useState } from "react";
 import JoinButton from "../../../components/joinButton";
 
 const HowItWorks = () => {
-  const videoRef = useRef(null);
-  const thumbnailRef = useRef(null);
+  // const videoRef = useRef(null);
+  // const thumbnailRef = useRef(null);
 
-  const [viewThumbnail, setViewThumbnail] = useState(true);
+  // const [viewThumbnail, setViewThumbnail] = useState(true);
 
-  const onPlayVideo = () => {
-    if (viewThumbnail && videoRef.current && thumbnailRef.current) {
-      setViewThumbnail(false);
-      (thumbnailRef.current as any).style.display = "none";
-      (videoRef.current as any).style.display = "block";
-      (videoRef.current as any).play();
-    }
-  };
+  // const onPlayVideo = () => {
+  //   if (viewThumbnail && videoRef.current && thumbnailRef.current) {
+  //     setViewThumbnail(false);
+  //     (thumbnailRef.current as any).style.display = "none";
+  //     (videoRef.current as any).style.display = "block";
+  //     (videoRef.current as any).play();
+  //   }
+  // };
   return (
     <div className="flex flex-col items-center py-[53px]">
       <p className="text-[38px] font-bold">See How it Works!</p>
       <div
         className="mt-[50px] rounded-lg cursor-pointer"
-        onClick={onPlayVideo}
+        // onClick={onPlayVideo}
       >
         {/* <img
           src="/assets/howitworks/thumbnail.png"
@@ -47,10 +47,10 @@ const HowItWorks = () => {
           src="https://www.youtube.com/embed/Y25yXtxH6qY"
         ></iframe>
 
+      </div>
         <div className="flex justify-center mt-4">
           <JoinButton className="md:px-4" />
         </div>
-      </div>
     </div>
   );
 };
