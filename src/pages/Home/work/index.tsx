@@ -1,14 +1,25 @@
-import Card from "../build/card";
+import Card from "./card";
 
 const Work = () => {
   return (
-    <div className="flex flex-row w-full my-[60px]">
-      <div className="flex w-1/2"></div>
-      <div className="flex flex-col w-1/2 my-10">
-        <p className="text-[38px] font-bold tracking-tight">Work with your Second Brain,<br />the way you want to</p>
-        <p className="font-Mulish text-[21px] mt-5">Organise information in a way that makes sense to you.</p>
-        <p className="font-Mulish text-[21px] mt-5">Use it to superchange you productivity.</p>
-        <div className="grid grid-cols-2 gap-5 mt-[50px] w-full">
+    <div className="flex flex-col-reverse md:flex-row mx-6 py-[60px] justify-between items-center gap-10">
+      <div className="min-w-max">
+        <img
+          src="/assets/work/banner.png"
+          className="w-[250px] md:w-[374px] rounded-lg"
+        />
+      </div>
+      <div className="md:w-[630px]">
+        <p className="text-2xl md:text-[38px] font-bold tracking-tight !leading-normal">
+          Work with your Second Brain,
+          <br />
+          the way you want to
+        </p>
+        <p className="font-Mulish text-sm md:text-[21px] mt-5 !leading-normal">
+          Organise information in a way that makes sense to you.
+          <br /> Use it to superchange you productivity.
+        </p>
+        <div className="flex flex-wrap gap-5 mt-[18px] w-full">
           {Cards.map((card, index) => (
             <Card data={card} key={index} />
           ))}
@@ -23,18 +34,18 @@ export default Work;
 const Cards = [
   {
     icon: "/assets/work/1.png",
-    label: "Move bookmarks across folders."
+    label: "Move bookmarks across folders.",
   },
   {
     icon: "/assets/work/2.png",
-    label: "Find information instantly!"
+    label: "Find information instantly!",
   },
   {
     icon: "/assets/work/3.png",
-    label: "Query single documents.or entire folders of data"
+    label: "Query single documents.or entire folders of data",
   },
   {
     icon: "/assets/work/4.png",
-    label: "One-Click Summaries. Notes & Explanations"
+    label: "One-Click Summaries. Notes & Explanations",
   },
-]
+];

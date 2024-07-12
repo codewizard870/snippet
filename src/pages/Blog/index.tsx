@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { BLOG_URL, BLOGS } from "../../constants";
+import { BLOG_URL } from "../../constants";
 import { BlogType } from "../../types";
 import BlogItem from "./item";
 

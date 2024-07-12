@@ -6,9 +6,9 @@ interface Props {
 }
 const Card:React.FC<Props> = ({data}) => {
   return (
-    <div className="w-[575px] p-5 flex items-center gap-3 bg-white rounded-lg">
-      <img src={data.icon} className="" />
-      <p className="text-base md:text-lg font-Mulish">{data.label}</p>
+    <div className="w-full md:w-[575px] p-3 md:p-5 flex items-center gap-3 bg-white rounded-lg">
+      <img src={data.icon} className="w-10 md:w-[50px]" />
+      <p className="text-sm md:text-lg font-Mulish">{data.label}</p>
     </div>
   )
 }
