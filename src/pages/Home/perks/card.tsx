@@ -14,12 +14,12 @@ const Card: React.FC<Props> = ({ data }) => {
         <p className="text-lg font-semibold md:text-2xl">{data.title}</p>
         <p className="text-xs md:text-base">{data.label}</p>
       </div>
-      <div className="flex flex-wrap pt-8 md:pt-14">
+      {/* <div className="flex flex-wrap pt-8 md:pt-14">
         <button className="flex items-center">
           <p className="text-xs font-semibold md:text-base text-primary-default">Learn More</p>
           <img src="/assets/perks/ArrowRight.png" className="w-5 pl-2 md:w-7" alt="" />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
