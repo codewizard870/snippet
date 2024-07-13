@@ -2,28 +2,23 @@ import Card from "../build/card";
 
 const Flexible = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full items-center px-6 my-[28px] gap-10">
-      <div>
-        <p className="text-2xl md:text-[38px] font-bold tracking-tight !leading-normal">
-          Flexible use cases to suit your
-          <br />
-          specific requirements.
+    <div className="flex flex-col md:flex-row justify-between items-center mx-6 md:mx-[57px] my-[58px] gap-10">
+      <div className="lg:min-w-[612px] lg:max-w-[612px]">
+        <p className="text-2xl md:text-[38px] font-bold tracking-tight !leading-normal lg:w-[600px]">
+          Flexible use cases to suit your specific requirements.
         </p>
-        <p className="font-Mulish text-sm md:text-[21px] mt-5 !leading-normal">
-          From students to professionals, researchers to housewives<br/>
-          - we have something for everyone.
+        <p className="font-Mulish text-sm md:text-[21px] mt-5 !leading-normal lg:w-[570px]">
+          From students to professionals, researchers to housewives - we have
+          something for everyone.
         </p>
-        <div className="flex flex-wrap gap-5 mt-[18px] w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-[18px] w-full">
           {Cards.map((card, index) => (
             <Card data={card} key={index} />
           ))}
         </div>
       </div>
-      <div className="min-w-max">
-        <img
-          src="/assets/flexible/banner.png"
-          className="w-[250px] md:w-[374px] rounded-lg"
-        />
+      <div className="flex max-w-[250px] lg:max-w-[374px] ">
+        <img src="/assets/flexible/banner.png" className="rounded-lg" />
       </div>
     </div>
   );

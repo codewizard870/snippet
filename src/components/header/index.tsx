@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
   };
 
   return (
-    <div className="fixed top-0 z-20 flex justify-between w-full px-6 py-6 border-b md:px-20 bg-gray-2 border-b-gray-1/10">
+    <div className="fixed top-0 z-30 flex justify-between w-full px-6 py-6 border-b md:px-20 bg-gray-2 border-b-gray-1/10">
       <div
         className="flex items-center gap-2 cursor-pointer"
         onClick={() => navigate("/")}

@@ -4,8 +4,8 @@ const Stories = () => {
   return (
     <div className="mx-6 md:mx-[55px] py-[50px] md:py-[120px] flex flex-col items-center">
       <p className="text-2xl md:text-[38px] font-bold tracking-tight pb-6 text-center">Real Stories from Satisfied Customers</p>
-      <p className="font-Mulish text-sm md:text-[21px]">See how we help students, researchers and professionals manage their data effectively.</p>
-      <div className="flex flex-wrap gap-5 mt-[50px]">
+      <p className="font-Mulish text-sm md:text-[21px] text-center">See how we help students, researchers and professionals manage their data effectively.</p>
+      <div className="grid lg:grid-cols-3 gap-8 mt-[50px]">
         {Cards.map((card, index) => (
           <Card data={card} key={index} />
         ))}

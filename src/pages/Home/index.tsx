@@ -12,7 +12,7 @@ function Home() {
   return (
 
     <div className="flex justify-center w-full">
-      <div className="w-full md:w-[1280px]">
+      <div className="w-full lg:max-w-[1280px]">
         <Hero />
         <Client />
         <GetStarted />

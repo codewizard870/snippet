@@ -6,7 +6,7 @@ const Perks = () => {
       <p className="text-2xl md:text-[38px] font-bold tracking-tight pb-10 !leading-normal">
         The perks are immeasurable
       </p>
-      <div className="flex flex-wrap w-full gap-6">
+      <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-3">
         {Cards.map((card, index) => (
           <Card data={card} key={index} />
         ))}

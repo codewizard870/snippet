@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="text-black p-6 md:p-[50px] flex flex-col md:flex-row gap-10 md:justify-between">
+    <div className="text-black p-6 md:p-[50px] flex flex-col lg:flex-row gap-10 md:justify-between">
       <div>
         <p className="text-xl md:text-2xl">
           second<b>BrainAI</b>
