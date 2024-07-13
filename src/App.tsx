@@ -27,7 +27,7 @@ function App() {
       <Footer />
 
       <JoinWaitList />
-      <MobileMenu />
+      {/* <MobileMenu /> */}
     </div>
   );
 }
