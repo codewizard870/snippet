@@ -27,7 +27,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
             second<span className="font-bold">BrainAI</span>
           </span>
         </div>
-        <div className="flex items-center gap-12">
+        <div className="flex items-center gap-4 md:gap-12">
           <div className="items-center hidden gap-2 md:flex md:gap-12">
             {Routes.map((route, index) => (
               <a href={route.href} key={index}>
@@ -49,7 +49,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
         </div>
       </div>
       {isOpen && (
-        <div className="flex flex-col items-center gap-5 py-8 border-b border-b-gray-1/20">
+        <div className="flex flex-col items-center gap-5 py-8 border-b md:hidden border-b-gray-1/20">
           {Routes.map((route, index) => (
             <a href={route.href} key={index}>
               <span className="text-sm font-semibold md:block md:text-base text-primary-default">
