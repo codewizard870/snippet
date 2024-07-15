@@ -29,7 +29,7 @@ const JoinWaitList = () => {
           onClick={(e) => e.stopPropagation()}
         >
           <div
-            className="absolute p-4 rounded-full cursor-pointer top-10 right-10 hover:bg-primary-default/10"
+            className="absolute p-4 rounded-full cursor-pointer top-1 right-1 md:top-10 md:right-10 hover:bg-primary-default/10"
             onClick={() => dispatch(toggleWaitList(false))}
           >
             <img src="/assets/joinwaitlist/close.png" />
